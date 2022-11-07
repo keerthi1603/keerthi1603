@@ -1,0 +1,22 @@
+#include <stdio.h>
+int
+main ()
+{
+  int a[4], i, n, c = 0;
+  printf ("enter a no");
+  for (i = 0; i < 4; i++)
+    scanf ("%d", &a[i]);
+  printf ("the no to be searched ");
+  scanf ("%d", &n);
+  for (i = 0; i < 4; i++)
+    {
+      if (n == a[i])
+	{
+	  printf ("%d %d no is found ", n, i + 1);
+	  c = c + 1;
+	}
+    }
+  if (c == 0)
+    printf ("no not found %d", n);
+  return 0;
+}
